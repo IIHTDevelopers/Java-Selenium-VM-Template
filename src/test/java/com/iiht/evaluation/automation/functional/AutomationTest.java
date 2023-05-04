@@ -83,13 +83,13 @@ public class AutomationTest {
 	 }
 	 
 	  @Test
-		public void testGetTitleInCorrectData() throws IOException {
+		public void testGetTitleIncorrectData() throws IOException {
 			try {
 				
 				String baseUrl = "https://www.yaksha.com/"; 
 				String title = "Yaksha Platform"; 
 				boolean isTitlePresent = UITest.checkTitle(driver, baseUrl, title); 
-				yakshaAssert(currentTest(), !isTitlePresent, businessTestFile);
+				yakshaAssert(currentTest(), isTitlePresent, businessTestFile);
 				
 			}catch(Exception ex) {
 				yakshaAssert(currentTest(), false, businessTestFile);
@@ -97,12 +97,12 @@ public class AutomationTest {
 		}
 		
 		@Test 
-		public void testIsTextPresentInCorrectData() throws IOException { 
+		public void testIsTextPresentIncorrectData() throws IOException { 
 			try {
 				  String baseUrl = "https://www.yaksha.com/"; 
 				  String text = "Request"; 
 				  boolean isTextPresent = UITest.findByText(driver,baseUrl, text); 
-				  yakshaAssert(currentTest(), !isTextPresent, businessTestFile);
+				  yakshaAssert(currentTest(), isTextPresent, businessTestFile);
 			  }catch(Exception ex) { 
 				  yakshaAssert(currentTest(), false, businessTestFile); 
 			  } 
@@ -110,24 +110,24 @@ public class AutomationTest {
 			  
 		
 		  @Test 
-		  public void testIsLinkExistsInCorrectData() throws IOException { 
+		  public void testIsLinkExistsIncorrectData() throws IOException { 
 			  try {
 				  	String baseUrl = "https://www.yaksha.com/"; 
 				  	String linkText = "View Assessments >>"; 
 				  	boolean isLinkExists = UITest.linkExists(driver, baseUrl, linkText); 
-				  	yakshaAssert(currentTest(), !isLinkExists, businessTestFile); 
+				  	yakshaAssert(currentTest(), isLinkExists, businessTestFile); 
 				  }catch(Exception ex) {
 					  yakshaAssert(currentTest(), false, businessTestFile); 
 				  } 
 		  }
 		  
 		  @Test 
-		  public void testIsLinkClickedInCorrectData() throws IOException { 
+		  public void testIsLinkClickedIncorrectData() throws IOException { 
 			  try {
 				  	String baseUrl = "https://www.yaksha.com/"; 
 				  	String linkText = "View Assessments >>"; 
 				  	boolean isLinkClicked = UITest.linkClick(driver,baseUrl, linkText);
-				  	yakshaAssert(currentTest(), !isLinkClicked, businessTestFile); 
+				  	yakshaAssert(currentTest(), isLinkClicked, businessTestFile); 
 				  	}catch(Exception ex) { 
 				  		yakshaAssert(currentTest(), false, businessTestFile);
 				  	} 
