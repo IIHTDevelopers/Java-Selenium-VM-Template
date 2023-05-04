@@ -142,11 +142,11 @@ try {
 		System.out.print("\n" + BLUE_BOLD_BRIGHT + "=>");
 		
 
-		System.out.print(YELLOW_BOLD_BRIGHT + "UITest For : ");
+		System.out.print(BLUE_BOLD_BRIGHT + "UITest For : ");
 		
 
 		for (int i = 1; i < r.length; i++) {
-			System.out.print(YELLOW_BOLD_BRIGHT + r[i] + " ");
+			System.out.print(BLUE_BOLD_BRIGHT + r[i] + " ");
 			
 		}
 		System.out.print(" : ");
