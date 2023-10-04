@@ -36,7 +36,7 @@ public class AutomationTest {
 		try {
 			
 			String baseUrl = "https://www.yaksha.com/"; 
-			String title = "Yaksha Tech Assessments Platform"; 
+			String title = "Home-Yaksha"; 
 			boolean isTitlePresent = UITest.checkTitle(driver, baseUrl, title); 
 			yakshaAssert(currentTest(), isTitlePresent, businessTestFile);
 			
@@ -62,7 +62,7 @@ public class AutomationTest {
 	  public void testIsLinkExistsCorrectData() throws IOException { 
 		  try {
 			  	String baseUrl = "https://www.yaksha.com/"; 
-			  	String linkText = "View All Assessments >>"; 
+			  	String linkText = "Explore Solutions"; 
 			  	boolean isLinkExists = UITest.linkExists(driver, baseUrl, linkText); 
 			  	yakshaAssert(currentTest(), isLinkExists, businessTestFile); 
 			  }catch(Exception ex) {
@@ -74,7 +74,7 @@ public class AutomationTest {
 	  public void testIsLinkClickedCorrectData() throws IOException { 
 		  try {
 			  	String baseUrl = "https://www.yaksha.com/"; 
-			  	String linkText = "View All Assessments >>"; 
+			  	String linkText = "Explore Solutions"; 
 			  	boolean isLinkClicked = UITest.linkClick(driver,baseUrl, linkText);
 			  	yakshaAssert(currentTest(), isLinkClicked, businessTestFile); 
 			  	}catch(Exception ex) { 
